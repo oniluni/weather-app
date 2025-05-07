@@ -1,21 +1,22 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "weather",
+  "productName": "weather-rework",
   "version": "0.1.0",
-  "identifier": "com.weather.app",
+  "identifier": "com.weather-rework.app",
   "build": {
-    "beforeDevCommand": "npm run dev",
+    "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "npm run build",
+    "beforeBuildCommand": "bun run build",
     "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "weather",
-        "width": 600,
-        "height": 600,
-        "resizable": false
+        "title": "Погода",
+        "width": 250,
+        "height": 250,
+        "resizable": false,
+        "center": true
       }
     ],
     "security": {
